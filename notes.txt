@@ -1,0 +1,16 @@
+Virtual Dom =>
+    a virtual DOM object is a representation of a DOM object.
+    a virtual DOM has the same attributes as the DOM, but it lacks the ability to change what's on the screen.
+    Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen. 
+    Ex - Think of Manipulating the virtual Dom as editing a blueprint of a building instead of moving rooms in an actual buliding.
+
+    In summary, here’s what happens when you try to update the DOM in React:
+
+    The entire virtual DOM gets updated.
+    The virtual DOM gets compared to what it looked like before you updated it. React figures out which objects have changed.
+    The changed objects, and the changed objects only, get updated on the real DOM.
+    Changes on the real DOM cause the screen to change.
+
+React Hooks => 
+    Hooks in React allows Functional components to have access to state and other react features
+    types of hooks :: useState, useEffect

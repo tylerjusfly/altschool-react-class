@@ -1,0 +1,76 @@
+body {
+  background-color: #777;
+  color: #f5f5f5ce;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-page {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #f5f5f5;
+  width: 100%;
+}
+
+.Card {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f7f7f7;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.19);
+}
+.card-image {
+  width: 100px;
+  border-radius: 50%;
+}
+.card-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.main-page form {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.main-page form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+.parent-btn{
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background: green;
+  border: transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.375rem 0.8rem;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.news .item{
+  border: 3px solid green;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+}
+.news .item a {
+  color: black;
+  font-weight: 800;
+}
