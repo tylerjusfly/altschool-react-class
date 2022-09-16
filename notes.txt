@@ -13,4 +13,22 @@ Virtual Dom =>
 
 React Hooks => 
     Hooks in React allows Functional components to have access to state and other react features
-    types of hooks :: useState, useEffect
+    types of hooks :: useState, useEffect, customHooks
+
+
+    useState => useState allows you to save a values or 
+
+//*****my explantion ***********//
+    useEffect => useEffect gives you the ability to handle any logic you would like to handle for yourself or logic that are outside react.
+    The useEffect hook consist of 3 things , the function, the dependency and the cleanup
+    the function is where you perform all your logics, and normally use effect only runs twice , when the app is loaded and when the use effect function runs. 
+    but to make the handle how many times the useEffect runs, you have to pass a value to the dependency
+
+    /***** Others **********/
+    The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. 
+
+//********************LAZY LOADIND ****************************//
+    LazyLoading => Lazying Loading allows you to show/load/render critical and important user interfaces or components first and quietly loading the non important ones.
+
+    FallBack Props allows/accept any React Elements  that you want to render while waiting for the components to load.
+        Every lazy loading components has to be wrapped within the Suspense Element in React.

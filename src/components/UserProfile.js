@@ -1,24 +1,22 @@
-import React from "react";
-import Avatar from "./Avatar";
-import { AuthContext } from "../App";
+import React, { Suspense } from "react";
 import "../index.css";
-import Navigation from "./Navigation";
+import { Themecontext } from "../App";
+// Lazy Loading
+const Avatar = React.lazy(() => import("./Avatar"));
 
 //Card component .....
 function UserProfile() {
-  const userAuth = React.useContext(AuthContext);
-
-  return (
-    <div className="Card">
-      <Avatar />
-      <div className="card-name"> {userAuth.name}</div>
-      <div className="card-bio">Obama is the first black president</div>
-      <div className="card-bio"> His age is {userAuth.age}</div>
-      <Navigation/>
-    </div>
-  );
+    let th = React.useContext(Themecontext);
+    return (
+        <div className="Card">
+            <Suspense fallback={<div>Loading ...</div>}>
+                <Avatar />
+            </Suspense>
+            <div className="card-name"> {th}</div>
+            <div className="card-bio">Obama is the first black president</div>
+            <div className="card-bio"> His age is</div>
+        </div>
+    );
 }
 
 export default UserProfile;
-
-// style={isActive => ({color: isActive ? "green" : "blue"})}
